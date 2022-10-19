@@ -22,6 +22,14 @@ html,body{
     scroll-behavior: smooth;
 }
 
+.navToggle{
+    display: none;
+}
+
+.navlinks img{
+    display: none;
+}
+
 #nav {
     display: flex;
     justify-content: space-between;
@@ -432,6 +440,7 @@ hr{
 .last1{
     display: flex;
     gap: 40px;
+    align-items: center;
 }
 
 .last1 a{
@@ -443,6 +452,10 @@ hr{
 
 .last1 a:hover{
     color: var(--softred);
+}
+
+.last1 img{
+    filter: invert(1) sepia(1) saturate(100) hue-rotate(250deg) brightness(2);
 }
 
 .last2{
@@ -823,7 +836,73 @@ hr{
         .last2 a{
             font-size: 40px;
         }
+
+        .navToggle{
+            display: block;
+          }
+        
+        .navToggle .close{
+            display: none;
+        }
+        
+    
+        .navlinks{
+            position: fixed;
+            left: 50%;
+            top: -120%;
+            transform: translate(-50%, 50%);
+            text-align: center;
+            width: 400px;
+            padding: 30px 0;
+            flex-direction: column;
+            background-color: var(--darkblue);
+            box-shadow: 1000px 80px 1000 hsl(229, 31%, 21%),
+                        -1000px -80px -1000 hsl(229, 31%, 21%);
+            transition: .5s;
+            z-index: 999;            
+        }
+    
+
+    .navlinks a{
+        font-size: 18px !important;
+        font-weight: 300 !important;
+        color: var(--white) !important;
+        padding: 10px 75px;
     }
+
+    .navlinks a:hover{
+        background-color: transparent !important;
+        color: var(--white);
+        border: 1px solid var(--white);
+    }
+
+    .navlinks hr{
+        display: block;
+        color: var(--white) !important;
+    }
+    
+    .login{
+        padding: 10px 90px !important;
+        font-size: 18px !important;
+        font-weight: 300 !important;
+        box-shadow: none;
+    }
+
+    .login:hover{
+        background-color: transparent;
+        color: var(--white) !important;
+        border: 1px solid var(--white);
+        
+    }
+
+    .navlinks img{
+        filter:invert(1) sepia(1) saturate(1) brightness(200);
+        display: block;
+    }
+    
+    
+    }
+
 
     @media only screen and (max-width: 480px) {
         #hero{
