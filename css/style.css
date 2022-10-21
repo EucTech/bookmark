@@ -87,6 +87,10 @@ html,body{
     width: 100%;
 }
 
+.hero-2 span{
+    font-size:40px ;
+}
+
 #hero img {
     width: 80%;
 }

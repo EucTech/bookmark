@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     
+    <!-- animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- remix icon -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     
@@ -47,7 +50,7 @@
     <section id="hero">
         <div>
             <div  class="hero-2">
-                <h1>A Simple Bookmark Manager</h1>
+                <h1>A Simple Bookmark <span class="typing-effect"></span></h1>
                 <p>A clean and simple interface to organize your favourite website. Open your new browser tab and see your site load instantly. Try it for free.</p>
             </div>
            
@@ -89,7 +92,7 @@
         </div>
 
         <div class="Search-box">
-            <div class="search-box1">
+            <div class="search-box1" data-aos="fade-up" data-aos-delay="200">
                 <img class="sm" src="/images/logo-chrome.svg" alt="">
                 <h2>Add to Chrome</h2>
                 <p>Minimum version 62</p>
@@ -97,7 +100,7 @@
                 <a href="#">Add & Install Extension</a>
             </div>
 
-            <div class="search-box2">
+            <div class="search-box2" data-aos="fade-up" data-aos-delay="400">
                 <img class="sm" src="/images/logo-firefox.svg" alt="">
                 <h2>Add to Firefox</h2>
                 <p>Minimum version 55</p>
@@ -105,7 +108,7 @@
                 <a href="#">Add & Install Extension</a>
             </div>
             
-            <div class="search-box3">
+            <div class="search-box3" data-aos="fade-up" data-aos-delay="600">
                 <img class="sm" src="/images/logo-opera.svg" alt="">
                 <h2>Add to Opera</h2>
                 <p>Minimum version 46</p>
@@ -186,6 +189,8 @@
         </div>
     </section>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="/js/typed.js"></script>
     <script src="/js/main.js"></script>
 </body>
 </html>
