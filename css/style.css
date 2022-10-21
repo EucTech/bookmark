@@ -621,7 +621,7 @@ hr{
     @media only screen and (max-width: 768px) {
         #nav{
             padding: 40px;
-            gap: 30px;
+            gap: 13px;
         }
 
         .navlinks{
@@ -634,7 +634,7 @@ hr{
 
         .search{
             gap: 10px;
-            font-size: 11px;
+            font-size: 10px;
         }
 
         .search a{
@@ -874,7 +874,7 @@ hr{
         }
 
     .navlinks div{
-        padding: 0 16px;
+        padding: 0 30px;
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -907,16 +907,18 @@ hr{
         box-shadow: none;
         width: 70%;
         background-color: transparent;
-        border: 2px solid #fff;
+        border: 2px solid rgb(150, 108, 108);
         border-radius: 4px !important;
         padding: 8px !important;
-        border-bottom: 2px solid #fff !important;
+        border-bottom: 2px solid rgb(150, 108, 108) !important;
         margin-top: 16px;
     }
 
     .login:hover{
         background-color: transparent;
-        color: var(--white) !important;
+        color: var(--softred) !important;
+        border: 2px solid #fff;
+        border-bottom: 2px solid #fff !important;
     }
 
     .navlinks img{
@@ -924,8 +926,13 @@ hr{
         display: block;
     }
 
+    .navlinks img:last-child{
+        width: 5%;
+    }
+
     .icons a{
         border: none !important;
+        font-size: 40px;
     }
 
     .icons{
