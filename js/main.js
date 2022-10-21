@@ -8,26 +8,26 @@ faqs.forEach(faq =>{
 
 
 
-const navlink = document.querySelector('navlinks')
-const navlinka = document.querySelector('navlink a')
-const navopen = document.querySelector('open')
-const navclose = document.querySelector('close')
+const navlink = document.querySelector('.navlinks')
+const navlinka = document.querySelectorAll('.navlinks a')
+const navOpen = document.querySelector('.open')
+const navClose = document.querySelector('.close')
 
 
 function navopen(){
-    navlink.style.top ="40%";
-    navopen.style.display = "none"
-    navclose.style.display = "block"
+    navlink.style.top ="0%";
+    navOpen.style.display = "none"
+    navClose.style.display = "block"
 }
 
 function navclose(){
-    navlink.style.top ="-40%";
-    navopen.style.display = "block"
-    navclose.style.display = "none"
+    navlink.style.top ="-120%";
+    navOpen.style.display = "block"
+    navClose.style.display = "none"
 }
 
 navlinka .forEach(navLink => {
     navLink.addEventListener('click', function(){
-      closeNav()
+        navclose()
     })
   })
